@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciana Peralta</title>
+    <link rel="icon" type="image/png" href="cv.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="relative">
+
+    <div class="ambient-bg"></div>
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <!-- Contenedor de Notificaciones -->
+    <div id="toast-container"></div>
+
+    <!-- Hero Section -->
+    <header id="inicio"
+        class="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-16 pt-20 pb-20 max-w-[90rem] mx-auto relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+
+            <!-- Izquierda: Textos -->
+            <div class="lg:col-span-7 reveal">
+                <p class="text-xl text-white font-bold mb-6 flex items-center gap-3 tracking-[3px] uppercase">
+                    Hola, soy Luci.
+                </p>
+
+                <!-- TÍTULO SÓLIDO (Basado en tu imagen de referencia) -->
+                <h1
+                    class="text-[3.5rem] md:text-[80px] font-extrabold tracking-[-0.04em] leading-[1.02] mb-10 text-white">
+                    <span class="block mb-2">Estratega Creativa &</span>
+                    <span class="text-gray-300 shimmer-text block md:inline">Growth Data Analyst.</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-400 font-light max-w-2xl leading-relaxed mb-12">
+                    Soy Luciana Peralta. Nací en Yaracuy, pero mi ambición por crecer y conectar con proyectos de
+                    gran escala me trajo a Caracas, buscando las mejores oportunidades del sector creativo y
+                    tecnológico. Me considero una publicista híbrida: sé lo que es mirar una base de datos pesada
+                    gracias a mi experiencia en logística y procesos masivos, y también sé cómo traducir esa información
+                    en identidades visuales estéticas e impactantes. Mi propósito en el mundo de la comunicación es
+                    liderar la Innovación Publicitaria y de Medios, construyendo narrativas visuales potentes y
+                    utilizando la tecnología para llevar las marcas al siguiente nivel.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center sm:justify-start gap-3 pt-2">
+                    <a href="#experiencia"
+                        class="btn-action w-full sm:w-auto text-center justify-center flex items-center gap-2 py-[12px] px-[24px] rounded-full text-[0.9rem] font-[800] uppercase tracking-[1px]">
+                        Conoce mi experiencia <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/luciana-peralta-069a9a1a4/" target="_blank"
+                        class="neo-tactile flex items-center justify-between gap-2 hover:bg-white/10 transition-colors py-[12px] px-[24px] rounded-full text-[0.9rem] font-[800] uppercase tracking-[1px] text-[#ffb8d1] w-full sm:w-auto border border-white/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="#0077B5">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <!-- Botón GitHub -->
+                    <a href="https://github.com/luciprogrammer-sys" target="_blank"
+                        class="neo-tactile flex items-center justify-center gap-2 hover:bg-white/10 transition-colors py-[12px] px-[24px] rounded-full text-[0.9rem] font-[800] uppercase tracking-[1px] text-gray-300 w-full sm:w-auto border border-white/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Derecha: Foto Clean & Premium -->
+            <div class="lg:col-span-5 reveal flex justify-center lg:justify-end mt-10 lg:mt-0"
+                style="transition-delay: 0.2s;">
+                <div
+                    class="neo-tactile hero-photo-card w-full max-w-[380px] aspect-[4/5] relative overflow-hidden group">
+                    <!-- REEMPLAZA ESTE SRC CON TU FOTO -->
+                    <img src="cv.jpg" alt="Luciana Peralta"
+                        class="w-594 h-1080 object-cover filter contrast-[1.1] brightness-[1.05] saturate-[0.95] group-hover:scale-105 transition-transform duration-700">
+
+                    <!-- Gradiente oscuro inferior para elegancia -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0b0510] via-transparent to-transparent opacity-90">
+                    </div>
+
+                    <!-- Etiquetas elegantes sobre la foto -->
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <div>
+                            <h2 class="text-2xl font-black text-white leading-none mb-1 tracking-tight">Luci</h2>
+                            <p class="text-[#ffb8d1] text-[10px] font-bold uppercase tracking-widest">24, La trinidad,
+                                Mir, VE <span class="inline-block w-2 h-2 rounded-full bg-[#ff007f] align-middle ml-1"
+                                    style="box-shadow: 0 0 6px 2px rgba(255,0,127,0.7);"></span>
+                            </p>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-[#ff007f]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Neo-Tactile Pills (Pink & Purple Vibe) -->
+    <section id="stats" class="py-40 px-6 md:px-12 lg:px-16 max-w-[90rem] mx-auto relative z-10">
+        <div class="mb-16 text-center reveal">
+            <h2 class="text-lg text-[#ffb8d1] mb-2"
+                style="font-family: 'Dancing Script', cursive; letter-spacing: 4px;">My Vibe</h2>
+            <h3 class="text-3xl font-extrabold tracking-tighter text-white">ADN Tech & Creativo</h3>
+            <p class="text-[10px] text-gray-500 mt-2 italic font-light tracking-[2px] uppercase">Haz clic en cada una
+                para descubrir mi stack de
+                herramientas</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+            <!-- Píldora 1: Diseño -->
+            <div class="reveal pill-card pill-magenta w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="palette" class="w-5 h-5"></i>
+                        <span>Diseño</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Canva
+                        Pro</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Capcut</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">UI/UX</span>
+                </div>
+            </div>
+
+            <!-- Píldora 2: Datos -->
+            <div class="reveal pill-card pill-purple w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                style="transition-delay: 0.1s;" onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                        <span>Analista/Marketing</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Office
+                        360</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Copywritting
+                    </span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Meta
+                        Ads</span>
+
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Whatsapp
+                        Bots</span>
+
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Google
+                        Analytics</span>
+
+                </div>
+            </div>
+
+            <!-- Píldora 3: IA -->
+            <div class="reveal pill-card pill-violet w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                style="transition-delay: 0.2s;" onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bot" class="w-5 h-5"></i>
+                        <span>IA Workflow</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Prompt
+                        Eng.</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">ChatGPT
+                        Plus</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Gemini</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Antigravity</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Claude</span>
+                </div>
+            </div>
+
+            <!-- Píldora 4: Programación -->
+            <div class="reveal pill-card pill-cyan w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                style="transition-delay: 0.3s;" onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="code-2" class="w-5 h-5"></i>
+                        <span>Programación</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">HTML5
+                        /CSS3/JavaScript</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Vibe
+                        Code</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">SQL</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">
+                        Editar
+                        codigo</span>
+                </div>
+            </div>
+
+            <!-- NUEVA PÍLDORA 5: Bilingüe -->
+            <div class="reveal pill-card pill-rose w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                style="transition-delay: 0.4s;" onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <span class="inline-block w-3 h-3"></span>
+                        <span>Idiomas</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Inglés
+                        Avanzado</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Frances
+                        basico</span>
+                </div>
+            </div>
+            <!-- Píldora 6: Datos -->
+            <div class="reveal pill-card pill-purple w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                style="transition-delay: 0.1s;" onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                        <span>Analista/Marketing</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Office
+                        360</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Copywritting
+                    </span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Meta
+                        Ads</span>
+
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Whatsapp
+                        Bots</span>
+
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Google
+                        Analytics</span>
+
+                </div>
+            </div>
+            <!-- Píldora 7: Datos -->
+            <div class="reveal pill-card pill-purple w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.3%-16px)] flex-grow max-w-[340px]"
+                style="transition-delay: 0.1s;" onclick="togglePill(this)">
+                <div class="pill-header">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                        <span>Analista/Marketing</span>
+                    </div>
+                    <i data-lucide="plus" class="w-5 h-5 opacity-80 pill-action-icon"></i>
+                </div>
+                <div class="pill-content">
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Office
+                        360</span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Copywritting
+                    </span>
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Meta
+                        Ads</span>
+
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Whatsapp
+                        Bots</span>
+
+                    <span
+                        class="text-[10px] bg-white/20 border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">Google
+                        Analytics</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="py-40 px-6 md:px-12 lg:px-16 max-w-[90rem] mx-auto relative z-10">
+        <div class="mb-20 reveal flex items-center gap-4">
+            <div class="neo-tactile p-4 rounded-2xl text-[#ff007f]">
+                <i data-lucide="briefcase" class="w-8 h-8"></i>
+            </div>
+            <div>
+                <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-white">Experiencia</h3>
+            </div>
+        </div>
+        <!-- Temu -->
+        <div class="reveal neo-tactile p-10 md:p-12 flex flex-col md:flex-row gap-10 items-start md:items-center">
+            <div
+                class="w-24 h-24 rounded-[32px] bg-gradient-to-br from-[#FF6D00] to-[#FC4B08] flex items-center justify-center shadow-[0_5px_40px_rgba(252,75,8)] shrink-0 overflow-hidden will-change-transform">
+                <img src="temu_clean.png" alt="Temu Logo"
+                    class="w-full h-full object-contain scale-[0.9] mix-blend-screen transition-transform duration-500 group-hover:scale-[0.95] will-change-transform">
+            </div>
+            <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <h4 class="text-3xl font-bold text-white">Temu</h4>
+                    <div class="flex items-center gap-2">
+                        <span
+                            class="text-[11px] font-bold uppercase tracking-widest text-[#d474ff] bg-[#9d4edd]/20 px-4 py-2 rounded-full border border-[#9d4edd]/30">Analista
+                            de Datos</span>
+                        <span
+                            class="text-[11px] font-bold uppercase tracking-widest text-[#00ff88] bg-[#00ff88]/10 px-4 py-2 rounded-full border border-[#00ff88]/40"
+                            style="box-shadow: 0 0 10px 2px rgba(0,255,136,0.25); text-shadow: 0 0 8px rgba(0,255,136,0.8);">Activo</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 font-light text-base leading-relaxed max-w-4xl">
+                    Gestión analítica de logística inversa y cadena de suministro.
+                    Procesamiento masivo de bases de datos para la evaluación,
+                    validación y ejecución precisa de resoluciones financieras y operativas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bambi -->
+        <div class="space-y-12">
+            <div class="reveal neo-tactile p-10 md:p-12 flex flex-col md:flex-row gap-10 items-start md:items-center"
+                style="transition-delay: 0.1s;">
+                <div
+                    class="w-24 h-24 rounded-[45px] bg-gradient-to-br from-[#171] to-[#171] flex items-center justify-center shadow-[0_15px_30px_rgba(255,0,127,0.3)] shrink-0 overflow-hidden will-change-transform">
+                    <img src="iconbambi.png" alt="Bambi Logo"
+                        class="w-full h-full object-contain scale-[1] filter brightness-0 invert transition-transform duration-500 group-hover:scale-[2.05] will-change-transform">
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <h4 class="text-3xl font-bold text-white">Hogar Bambi</h4>
+                        <span
+                            class="text-[11px] font-bold uppercase tracking-widest text-[#d474ff] bg-[#9d4edd]/20 px-4 py-2 rounded-full border border-[#9d4edd]/30">
+                            Servicio Comunitario</span>
+                    </div>
+                    <p class="text-gray-400 font-light text-base leading-relaxed max-w-4xl">
+                        Gestión de iniciativas de apoyo, manejo de dinámicas grupales y organización logística.
+                        Desarrollo de empatía estratégica y resolución de problemas bajo presión,
+                        conectando marcas con propósitos humanos.
+                    </p>
+                </div>
+            </div>
+            <!-- Amazon -->
+            <div class="reveal neo-tactile p-10 md:p-12 flex flex-col md:flex-row gap-10 items-start md:items-center">
+                <div
+                    class="w-24 h-24 rounded-[32px] bg-gradient-to-br from-[#ff007f] to-[#ff4785] flex items-center justify-center shadow-[0_15px_30px_rgba(255,0,127,0.3)] shrink-0 overflow-hidden will-change-transform">
+                    <img src="icon amazon.png" alt="Amazon Logo"
+                        class="w-full h-full object-contain scale-[2] filter brightness-0 invert transition-transform duration-500 group-hover:scale-[2.05] will-change-transform">
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                        <h4 class="text-3xl font-bold text-white">Amazon</h4>
+                        <span
+                            class="text-[11px] font-bold uppercase tracking-widest text-[#ffb8d1] bg-[#ff007f]/20 px-4 py-2 rounded-full border border-[#ff007f]/30">Servicio
+                            al Cliente</span>
+                    </div>
+                    <p class="text-gray-400 font-light text-base leading-relaxed max-w-4xl">
+                        Procesamiento de datos masivos (Big Data) provenientes de canales de atención.
+                        soporte a clientes y resolucion de problemas en el area de logistica.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Portafolio / Impacto -->
+    <section id="proyectos" class="py-40 px-6 md:px-12 lg:px-16 max-w-[90rem] mx-auto relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6 reveal">
+            <div class="flex items-center gap-4">
+                <div class="neo-tactile p-4 rounded-2xl text-[#ffb8d1]">
+                    <i data-lucide="star" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-white">Portafolio</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Proyecto 1 -->
+            <div class="reveal neo-tactile p-12 relative overflow-hidden group block">
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-[#ff007f]/0 to-[#ff007f]/0 group-hover:from-[#ff007f]/10 transition-all duration-500">
+                </div>
+
+                <div class="flex justify-between items-start mb-10 relative z-10">
+                    <div>
+                        <h4 class="text-3xl font-extrabold text-white mb-2">Carnes Villa Polo</h4>
+                        <a href="https://villa-nueva-polo-web-sys-git-562bc7-luciprogrammer-sys-projects.vercel.app/"
+                            target="_blank"
+                            class="text-[#ff007f] text-sm font-bold flex items-center gap-1 hover:underline">
+                            Ver Proyecto Web <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://github.com/luciprogrammer-sys" target="_blank"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gray-700 transition-colors shadow-inner overflow-hidden">
+                            <img src="github.png" alt="GitHub" class="w-10 h-10 object-contain invert">
+                        </a>
+                        <a href="https://www.instagram.com/carnesvillapolo.ca/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#ff007f] transition-colors shadow-inner overflow-hidden">
+                            <img src="instagram.png" alt="Instagram" class="w-10 h-10 object-contain">
+                        </a>
+                    </div>
+                </div>
+
+                <p class="text-gray-400 font-light text-base leading-relaxed mb-10 relative z-10">
+                    Desarrollo de aplicación web y rediseño total de la identidad visual. Estrategia en Reels usando
+                    insights de data. ¿El resultado?
+                    La comunidad explotó con un <strong class="text-white">crecimiento del 250%</strong> en alcance
+                    orgánico y una presencia digital robusta.
+                </p>
+                <div class="flex gap-3 relative z-10">
+                    <span
+                        class="text-[11px] uppercase tracking-widest font-bold bg-[#ff007f]/10 text-[#ffb8d1] px-4 py-2 rounded-full border border-[#ff007f]/30">Web
+                        Dev</span>
+                    <span
+                        class="text-[11px] uppercase tracking-widest font-bold bg-[#ff007f]/10 text-[#ffb8d1] px-4 py-2 rounded-full border border-[#ff007f]/30">Design</span>
+                    <span
+                        class="text-[11px] uppercase tracking-widest font-bold bg-[#ff007f]/10 text-[#ffb8d1] px-4 py-2 rounded-full border border-[#ff007f]/30">Social
+                        Media</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <a href="https://www.instagram.com/lucitaniaperalta/" target="_blank"
+                class="reveal neo-tactile p-12 relative overflow-hidden group block" style="transition-delay: 0.1s;">
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-[#9d4edd]/0 to-[#9d4edd]/0 group-hover:from-[#9d4edd]/10 transition-all duration-500">
+                </div>
+
+                <div class="flex justify-between items-start mb-10 relative z-10">
+                    <h4 class="text-3xl font-extrabold text-white">@lucitaniaperalta</h4>
+                    <div
+                        class="w-10 h-10 rounded-full bg-[#9d4edd]/40 border border-[#9d4edd]/60 flex items-center justify-center group-hover:bg-[#9d4edd] transition-colors shadow-inner overflow-hidden">
+                        <img src="instagram.png" alt="Instagram" class="w-10 h-10 object-contain">
+                    </div>
+                </div>
+
+                <p class="text-gray-400 font-light text-base leading-relaxed mb-10 relative z-10">
+                    Estrategia de contenido y branding personal. Gestión de comunidad y diseño visual para potenciar la
+                    presencia digital con un enfoque <strong class="text-white">estético y estratégico</strong>.
+                </p>
+                <div class="flex gap-3 relative z-10">
+                    <span
+                        class="text-[11px] uppercase tracking-widest font-bold bg-[#9d4edd]/10 text-[#d474ff] px-4 py-2 rounded-full border border-[#9d4edd]/30">Instagram</span>
+                    <span
+                        class="text-[11px] uppercase tracking-widest font-bold bg-[#9d4edd]/10 text-[#d474ff] px-4 py-2 rounded-full border border-[#9d4edd]/30">Branding</span>
+                    <span
+                        class="text-[11px] uppercase tracking-widest font-bold bg-[#9d4edd]/10 text-[#d474ff] px-4 py-2 rounded-full border border-[#9d4edd]/30">Social
+                        Media</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-40 px-6 md:px-12 lg:px-16 text-center relative z-10">
+        <div class="reveal max-w-5xl mx-auto neo-tactile p-16 md:p-24 relative">
+            <h4
+                class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-10 text-white flex flex-wrap justify-center items-center gap-4">
+                ¿Hablamos?
+            </h4>
+            <p class="text-gray-400 font-light text-lg mb-14 max-w-2xl mx-auto relative z-10">
+                Estoy en Caracas buscando proyectos que se atrevan a romper el molde visual y estratégico.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 pt-4">
+                <a href="https://wa.link/bxoa69" target="_blank" class="btn-action w-full sm:w-auto">
+                    <i data-lucide="send" class="w-0 h-0 opacity-70"></i> Iniciar Contacto
+                </a>
+                <a href="https://drive.google.com/drive/folders/1AivzEt3b1n1tt2RtiUSmp_C8sIM7xzZc?usp=drive_link"
+                    target="_blank"
+                    class="neo-tactile flex items-center justify-center gap-3 hover:bg-white/10 transition-colors py-[18px] px-[42px] rounded-full text-[0.9rem] font-[800] uppercase tracking-[2px] text-[#ffb8d1] w-full sm:w-auto border border-white/20">
+                    <i data-lucide="file-text" class="w-0 h-0 opacity-70"></i> Propuesta
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-24 flex flex-col items-center justify-center gap-4 text-gray-500">
+            <p class="text-[11px] font-bold uppercase tracking-[5px] flex items-center justify-center gap-3">
+                luciananivel01@gmail.com <span class="inline-block w-2 h-2 rounded-full bg-[#ff007f] align-middle"
+                    style="box-shadow: 0 0 6px 2px rgba(255,0,127,0.7);"></span> 0412-5287149,
+                Caracas 2026
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // --- EFECTO MAGNÉTICO (TILT 3D) ---
+            const tiltElements = document.querySelectorAll('.hero-photo-card, #proyectos .neo-tactile');
+
+            tiltElements.forEach(el => {
+                el.addEventListener('mousemove', (e) => {
+                    const rect = el.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+
+                    const rotateX = (y - centerY) / 20;
+                    const rotateY = (centerX - x) / 20;
+
+                    el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+                });
+
+                el.addEventListener('mouseleave', () => {
+                    el.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+                });
+            });
+        };
+        // Sistema Interactivo de Notificaciones (Toasts Premium)
+        function showToast(message, icon = 'check-circle-2', colorClass = 'text-[#ff007f]') {
+            const container = document.getElementById('toast-container');
+
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerHTML = `
+                <i data-lucide="${icon}" class="w-5 h-5 ${colorClass}"></i>
+                <span>${message}</span>
+            `;
+
+            container.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
+
+        // --- NUEVO: Función para abrir/cerrar píldoras de habilidades ---
+        function togglePill(clickedElement) {
+            // Cerrar todas las demás píldoras (Efecto acordeón)
+            document.querySelectorAll('.pill-card').forEach(pill => {
+                if (pill !== clickedElement) {
+                    pill.classList.remove('open');
+                }
+            });
+            // Alternar la clase open en la píldora clickeada
+            clickedElement.classList.toggle('open');
+        }
+
+        // Acciones de Botones
+        function copyEmail() {
+            const email = "luciananivel01@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                showToast('¡Email copiado! Lista para hablar. 💌', 'heart', 'text-[#ff007f]');
+            }).catch(err => {
+                const textArea = document.createElement("textarea");
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    showToast('¡Email copiado! Lista para hablar. 💌', 'heart', 'text-[#ff007f]');
+                } catch (err) {
+                    showToast('Error al copiar email.', 'x-circle', 'text-[#ff007f]');
+                }
+                document.body.removeChild(textArea);
+            });
+        }
+
+        // --- NUEVO: Función Real de Descarga de CV ---
+        function downloadCV() {
+            showToast('Preparando tu archivo...', 'loader-2', 'text-[#9d4edd] animate-spin');
+
+            // Contenido del CV real en formato Markdown
+            const cvContent = `# LUCIANA PERALTA
+**Growth Marketer & Data Analyst Specialist**
+
+📍 Caracas, Venezuela | ✉️ hola@luciana.com
+🔗 LinkedIn | 📈 Portafolio de Insights
+
+---
+
+## 💡 PERFIL PROFESIONAL
+Estratega de Mercadotecnia (5to semestre ISUM) con una trayectoria robusta en análisis de datos para corporaciones Fortune 500 y sectores gubernamentales. Especialista en transformar métricas complejas en narrativas de crecimiento y contenido creativo de alto impacto. Bilingüe (C1) con enfoque en automatización mediante IA para maximizar la eficiencia operativa y el ROI de marca.
+
+---
+
+## 🚀 EXPERIENCIA CORPORATIVA & PROYECTOS
+
+**Data Analyst / Insights Specialist**
+*Amazon (Remote)*
+* Extracción y limpieza de grandes datasets para la identificación de tendencias de consumo.
+* Optimización de modelos de predicción de demanda mediante análisis estadístico.
+
+**Performance Data Analyst**
+*Temu (Remote/Project Based)*
+* Auditoría de métricas de adquisición de usuarios y performance de campañas digitales en LATAM.
+* Reportes de eficiencia de pauta publicitaria para el escalado de operaciones.
+
+**Analista de Datos Estratégicos**
+*Sector Público*
+* Procesamiento de datos sociodemográficos para el diseño de campañas de comunicación.
+* Gestión de tableros de control de opinión pública y efectividad de mensajes.
+
+**Social Media Strategy & Growth**
+*Carnes Villa Polo*
+* Incremento del 250% en alcance orgánico mediante insights de comportamiento.
+* Diseño de identidad visual y automatización de procesos creativos con IA (98% de ahorro en tiempo).
+
+---
+
+## 🛠️ STACK TECNOLÓGICO & HABILIDADES
+* Data & Analítica: SQL, Excel Avanzado, Google Analytics, Meta Ads.
+* Diseño & UX: Figma, Adobe CC, Canva Pro, UI/UX.
+* IA Generativa: Prompt Engineering, ChatGPT Plus, Midjourney, Claude 3.
+* Código: HTML5, CSS3, JavaScript Basics, Tailwind CSS.
+
+---
+
+## 🌍 IDIOMAS
+* Inglés: C1 - Avanzado / Bilingüe
+* Español: Nativo`;
+
+            // Lógica para crear y descargar el archivo automáticamente
+            setTimeout(() => {
+                const blob = new Blob([cvContent], { type: 'text/markdown;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'CV_Luciana_Peralta.md';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                showToast('¡CV descargado con éxito! ✨', 'check-circle-2', 'text-[#ff007f]');
+            }, 1500);
+        }
+
+        // --- EFECTO TILT 3D PARA LA FOTO ---
+        const photoCard = document.querySelector('.hero-photo-card');
+        if (photoCard) {
+            photoCard.addEventListener('mousemove', (e) => {
+                const rect = photoCard.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 25;
+                const rotateY = (centerX - x) / 25;
+
+                photoCard.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px) scale(1.01)`;
+            });
+
+            photoCard.addEventListener('mouseleave', () => {
+                photoCard.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0) scale(1)`;
+            });
+        }
+
+        // --- EFECTO MAGNÉTICO PARA BOTONES Y TARJETAS (REGLA 6) ---
+        const magneticElements = document.querySelectorAll('.btn-action, .neo-tactile:not(.hero-photo-card)');
+        magneticElements.forEach(el => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const deltaX = (x - centerX) / 4;
+                const deltaY = (y - centerY) / 4;
+
+                el.style.transform = `translate3d(${deltaX}px, ${deltaY}px, 0) scale(1.02)`;
+                if (el.classList.contains('neo-tactile')) {
+                    el.style.boxShadow = `0 30px 60px rgba(0,0,0,0.3)`;
+                }
+            });
+
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = `translate3d(0, 0, 0) scale(1)`;
+                if (el.classList.contains('neo-tactile')) {
+                    el.style.boxShadow = ``;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
